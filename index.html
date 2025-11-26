@@ -1,0 +1,381 @@
+<!Doctype html>
+<html>
+ <head>
+    <meta charset="UTF-8"> 
+    <title>My Personal Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: "poppins",serif;
+
+        }
+        body{
+            background-color: #222831;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem;
+            max-width: 1200px;
+        }
+        .navigation ul{
+            display: flex;
+            list-style-type: none;
+            gap: 2rem;
+        }
+        .navigation a{
+            text-decoration: none;
+            color: #eeeeee;
+        }
+        .navigation a:hover{
+            color:deeppink;
+        }
+        hr{
+            opacity: 30%;
+        }
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+            max-width: 1200px;
+            margin-right: 35px;
+        } 
+        .herosap{
+            display: flex;
+            flex-direction: column;
+            gap: 0,5rem;
+        }
+        .name{
+            font-size: 3rem;
+            color: #eeeeee;
+        }
+        .title{
+            font-size:4em ;
+            color: deeppink;
+        
+        }
+        .hire{
+            background-color: rgb(158, 50, 100);
+            color: white;
+            border: 2px;
+            border-radius: 30px;
+            text-decoration: none;
+            padding: 1,5rem 1,5rem;
+            text-shadow: 0px 4px 4px #222831;
+        }
+        .aboutme{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width:1200px ;
+            gap: 10rem;
+            margin-left: 10px;
+        }
+        .textcontene{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .texttitle{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 2rem;
+        }
+        .aboutname{
+            color: #eeeeee;
+        }
+        .aboutetitle{
+            color: deeppink;
+        }
+        .aboutmepar{
+            text-align: justify;
+            color: #eeeeee;
+        }
+        .works{
+            background-image: url(gg.png);
+            padding: 10rem 10rem;
+            margin: 5rem 0rem;
+        }
+       .workcontene{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        margin: 5rem auto;
+        max-width: 1200px;
+
+       }
+       .projecttitle{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 5px;
+        font-size: 2rem;
+       }
+       .works ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+       }
+       .works li{
+        border-radius: 16px;
+        background-color: rgba(57,62,70,0,5);
+        backdrop-filter: blur(4px);
+        padding: 1rem 4rem;
+       }
+       .works li img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        transition: transform 0.2s;
+       }
+       .works li:hover{
+        transform: scale(1.5);
+       }
+       .contactcontene{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+       }
+       .contacttitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        font-size: 2rem;
+       }
+       .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5rem;
+        gap: 20rem;
+
+       }
+       .contact h3,.contact a{
+        color: #eeeeee;
+        text-decoration: none;
+       }
+    
+       .emailandphone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    
+       }
+       .phone{
+        margin-left: 300px;
+       }
+       .email{
+        margin-right: 100px;
+       }
+       .socialmedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+       }
+       .socialmedia a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background-color:#1c2128;
+        backdrop-filter: blur(4px);
+        padding: 1rem;
+       }
+     
+       .footer{
+        color:white;
+        padding: 2rem;
+        text-align: center;
+        font-size: larger;
+
+       }
+       .me{
+        color: white;
+        text-align: center;
+        font-size: x-large;
+        padding: 2rem;
+       }
+       @media (max-width:1023px){
+        header{
+            margin-left: left;
+            margin-right: 1rem;
+        }
+        .hero{
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .hero img{
+            width: 400px;
+        }
+        .nametitle{
+            font-size: 2rem;
+        }
+        .arrow{
+            display: none;
+        }
+        .aboutme{
+            flex-direction: center;
+            margin: 0rem 5rem;
+            gap: 1rem;
+        }
+        .aboutname,.aboutetitle{
+            font-size: 2ree;
+        }
+        .light{
+            width: 60px;
+        }
+        .aboutmeimg{
+            width: 400px;
+        }
+        .works{
+            padding: 0;
+        }
+        .workscontene{
+            padding: 5rem 0rem;
+            gap:3rem;
+        }
+        .projecttitle{
+            margin-left: 1rem;
+        }
+        .works ul{
+            flex-direction: column;
+            gap:2rem
+        }
+        .contactcontene{
+            margin: 10rem 5rem;
+            gap:2rem
+        }
+        .contact{
+            flex-direction: column;
+            gap:1rem;
+            margin-right: 0;
+        }
+
+       }
+
+    </style>
+ </head>
+ <body>
+    <header>
+        <img src="logo2.png" alt="web weler" width="50px">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#My Works">My Works</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section class="hero">
+        <div class="herosab">
+            <h1 class="name">I'm Aya La</h1>
+            <h1 class="title"> Digital Developer</h1>
+            <div class="herob">
+                <a class="hire" href="https://www.f
+            iverr.com/sellers/ayadigitallab/edit">Text me</a>
+            </div>
+        </div>
+
+               <img src="eyo.png" alt="me" width="500px" style=" box-shadow: 10 10 10px;
+               margin-right:130px ; ">
+    </section>
+    <section class="aboutme" id="aboutme">
+        <img src="w.png"alt="aboutmeimage" class="aboutme img"width="450px">
+        <div class="textcontene">
+            <div class="texttitle">
+                <h1 class="aboutname">About</h1>
+                <h1 class="aboutetitle">me</h1>
+                <img src="do.png" alt="light" width="80px"class="light">
+        </div>
+        <p class="aboutmepar">
+Hey, I'm Aya — a digital developer who loves creating modern, clean, and meaningful web experiences. I enjoy turning ideas into functional designs, exploring new technologies, and constantly improving my skills. Innovation, creativity, and problem-solving are what drive me in my digital journey.
+       </p>
+        </div>
+    </section>
+     
+    <section class="works" id="My Works">
+        <div class="workcontene">
+            <div class="projecttitle">
+                <h1 class="aboutname">My recent</h1>
+                <h1 class="aboutetitle">Works</h1>
+            </div>
+        <ul>
+            <li>
+                <a href="#"><img src="20.png" alt="website" ></a>
+            </li>
+            <li>
+                <a href="#"><img src="21.png" alt="website"   ></a>
+                
+            </li>
+            <li>
+                <a href="#"><img src="23.png" alt="website" ></a>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <section class="contactcontene" id="Contact">
+        <div class="contacttitle">
+            <h1 class="aboutname">Contact</h1>
+            <h1 class="aboutetitle">me</h1>
+        </div>
+        <div class="contact">
+            <div class="emailandphone">
+              <div class="email">
+               <img src="ayro.png"
+                alt="email logo" width="30px">
+                <a href="mailto:ayalahlali2007@gmail.com">
+                 <h3>ayalahlali2007@gmail.com</h3></a></div>
+            <div class="emailandphone">
+                <div class="phone">
+                <img src="innnnn.png" alt="phone logo" width="30px">
+                <h3>+212 645905389</h3></div>
+        </div>
+        </div>
+    </section>
+    <section>
+           <div class="socialmedia">
+            <a href="https://www.f
+            iverr.com/sellers/ayadigitallab/edit" target="_blank">
+            <img src="fi.png" alt="my fiveer accompt" width="40px" >
+            </a>
+            <a href="https://www.instagram.com/ayaa__la?igsh=MWhxa2tsZGgzOHRqMw%3D%3D&utm_source=q
+            " target="_blank">
+            <img src="insta.png" alt="my instagram accompt " width="40px">
+            </a>
+            <a href="https://www.linkedin.com/in/aya-lahlali-673aa4375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+            " target="_blank" >
+            <img 
+            src="bb.png" alt="my linkedin accompt" width="40px" >
+             </a>
+           </div>
+    </section>
+<br>
+    <hr>
+    <footer>
+        <p class="me"> Buit by AyaLa.</p>
+    </footer>
+
+ </body>
+
+
+
+</html>
