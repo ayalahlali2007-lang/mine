@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الأكل المغربي</title>
+  <style>
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#fff8e1;
+      text-align:center;
+    }
+    header {
+      background:#d35400;
+      color:white;
+      padding:30px;
+    }
+    nav {
+      background:#e67e22;
+      padding:12px;
+    }
+    nav a {
+      color:white;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover {
+      text-decoration:underline;
+    }
+    .container {
+      padding:20px;
+    }
+    .cards {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+    .card {
+      background:white;
+      width:250px;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+    .card h3 {
+      color:#d35400;
+    }
+    .card p {
+      font-size:14px;
+    }
+    footer {
+      background:#d35400;
+      color:white;
+      padding:15px;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>الأكل المغربي</h1>
+    <p>تقاليد ونكهات من المغرب</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">الطاجين</a>
+    <a href="#">الكسكس</a>
+    <a href="#">المشروبات</a>
+  </nav>
+
+  <div class="container">
+    <h2>أكلات مشهورة</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>الطاجين</h3>
+        <p>طبق مغربي تقليدي مطهو باللحم أو الدجاج مع الخضار والتوابل المغربية.</p>
+      </div>
+
+      <div class="card">
+        <h3>الكسكس</h3>
+        <p>طبق شعبي يتكون من سميد القمح المطهو مع الخضار واللحم أو الدجاج.</p>
+      </div>
+
+      <div class="card">
+        <h3>الحريرة</h3>
+        <p>شوربة مغربية شهيرة مصنوعة من الحمص، العدس، والطماطم، غالبا في رمضان.</p>
+      </div>
+
+      <div class="card">
+        <h3>الشاي بالنعناع</h3>
+        <p>مشروب تقليدي منعش مصنوع من الشاي الأخضر والنعناع المغربي.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>©️ 2025 - جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+</html>
